@@ -14,14 +14,14 @@ $(document).ready(function($) {
     /* ==============================================
         Full height home-section
     =============================================== */
-    
+
 	var windowHeight = $(window).height(),
 		topSection = $('#hero-section');
 	topSection.css('height', windowHeight);
 
 	$(window).resize(function(){
 		var windowHeight = $(window).height();
-		topSection.css('height', windowHeight);       
+		topSection.css('height', windowHeight);
 	});
 
     /* ==============================================
@@ -45,7 +45,7 @@ $(document).ready(function($) {
     /* ==============================================
         Parallax
     =============================================== */
-    
+
     $.stellar({
         responsive: true,
         horizontalScrolling: false,
@@ -66,7 +66,7 @@ $(document).ready(function($) {
 
     /* ==============================================
         Smooth Scroll on anchors
-    =============================================== */  
+    =============================================== */
 
     $('a[href*=#]:not([href=#])').click(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -93,24 +93,24 @@ $(document).ready(function($) {
         Counter increment
     =============================================== */
 
-    function countUp() {   
-        var dataperc;   
+    function countUp() {
+        var dataperc;
         $('.statistic-percent').each(function(){
             dataperc = $(this).attr('data-perc'),
             $(this).find('.percentfactor').delay(6000).countTo({
                 from: 0,                 // number to begin counting
-                to: dataperc,      
+                to: dataperc,
                 speed: 1000,             // ms
                 refreshInterval: 10,
-            });  
+            });
         });
     }
-        
+
     $('.statistic-percent').waypoint(function() {
         countUp();
     },
     {
-        offset: '95%',                 
+        offset: '95%',
         triggerOnce: true
     });
 
@@ -127,7 +127,7 @@ $(document).ready(function($) {
 
     /* ==============================================
     Placeholder
-    =============================================== */ 
+    =============================================== */
 
     $('input, textarea').placeholder();
 
@@ -151,9 +151,9 @@ $(document).ready(function($) {
         else {
             el.addClass( anim + " in" );
             el.removeClass('out');
-        }    
-    },{accY: -150});  
-    
+        }
+    },{accY: -150});
+
 
     /* ==============================================
         MailChip
@@ -161,18 +161,18 @@ $(document).ready(function($) {
 
     $('.mailchimp').ajaxChimp({
         callback: mailchimpCallback,
-        url: "http://clas-design.us10.list-manage.com/subscribe/post?u=5ca5eb87ff7cef4f18d05e127&amp;id=9c23c46672" //Replace this with your own mailchimp post URL. Don't remove the "". Just paste the url inside "".  
+        url: "http://clas-design.us10.list-manage.com/subscribe/post?u=5ca5eb87ff7cef4f18d05e127&amp;id=9c23c46672" //Replace this with your own mailchimp post URL. Don't remove the "". Just paste the url inside "".
     });
 
     function mailchimpCallback(resp) {
          if (resp.result === 'success') {
             $('.subscription-success').html('<span class="icon-happy"></span><br/>' + resp.msg).fadeIn(1000);
             $('.subscription-error').fadeOut(500);
-        
+
         } else if(resp.result === 'error') {
             $('.subscription-error').html('<span class="icon-sad"></span><br/>' + resp.msg).fadeIn(1000);
             $('.subscription-success').fadeOut(500);
-        }  
+        }
     }
 
 
@@ -253,7 +253,7 @@ $(document).ready(function($) {
         Google Map
     =============================================== */
 
-        var mapLocation = new google.maps.LatLng(34.031428,-118.2071542,17);
+        var mapLocation = new google.maps.LatLng(-12.658231, -39.089838,17);
         var $mapis = $('#map');
         if ($mapis.length > 0) {
             var map;
@@ -319,7 +319,7 @@ $(document).ready(function($) {
 
     /* ==============================================
         BxSlider Testimonial
-    =============================================== */ 
+    =============================================== */
 
     $(".testimonials-slider").bxSlider({
         nextSelector: ".tc-arrows .tc-arrow-right",
@@ -338,25 +338,25 @@ $(document).ready(function($) {
     =============================================== */
 
         $(".owl-carousel").owlCarousel({
- 
+
             autoPlay: 3000, //Set AutoPlay to 3 seconds
             items : 4,
             itemsDesktop : [1199,3], //number of items displayed on resolution less then 1199px
             itemsDesktopSmall : [979,3] //number of items displayed on resolution less then 979px
- 
+
         });
 
     /* ==============================================
         Responsive video
     =============================================== */
-    
+
         $(".project-video, .video-creative, .video-post").fitVids();
-        
+
 
     /* ==============================================
         MagnificPopup - lightbox effect
     =============================================== */
-    
+
         // Example with multiple objects
         $('.zoom').magnificPopup({
             type: 'image',
@@ -372,22 +372,22 @@ $(document).ready(function($) {
     /* ==============================================
         OWL Carousel (initialize screenshot carousel)
     =============================================== */
-    
+
     $(".screenshots-carousel").owlCarousel({
- 
+
         autoPlay: 3000, //Set AutoPlay to 3 seconds
- 
+
         items : 5,
         itemsDesktop : [1199,3],
         itemsDesktopSmall : [979,3]
- 
+
     });
 
 });
 
 $(window).load(function(){
     "use strict";
-    
+
     /* ==============================================
     Isotope
     =============================================== */
@@ -403,7 +403,7 @@ $(window).load(function(){
                 $(".filter.active").removeClass("active");
                 $(this).addClass("active");
                 var selector = $(this).attr('data-filter');
-                container.isotope({ 
+                container.isotope({
                     filter: selector
                 });
                 return false;
