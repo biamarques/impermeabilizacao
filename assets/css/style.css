@@ -2,7 +2,7 @@
 	Salient by TEMPLATE STOCK
 	templatestock.co @templatestock
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
-    
+
 **********************************************************************************************/
 
 /***********************************************************************************************/
@@ -49,7 +49,7 @@
       -Sidebar
       -About widget
       -Tags
-      -Recent Posts 
+      -Recent Posts
   21. App landing page
   22. Coming soon page
   23. Personal page
@@ -155,7 +155,7 @@ h1, .h1 {
 
 h2 {
   font-size: 24px;
-}  
+}
 
 h3 {
   font-size: 17px;
@@ -229,7 +229,7 @@ p {
   outline: 0;
 }
 
-.btn-primary:hover, .btn-primary:focus, .btn-primary.focus, 
+.btn-primary:hover, .btn-primary:focus, .btn-primary.focus,
 .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
   color: #fff;
   background-color: #000;
@@ -359,7 +359,7 @@ p {
 
 /***********************************************************************************************/
 /* =Preloader */
-/***********************************************************************************************/ 
+/***********************************************************************************************/
 
 #preloader {
   background-color: #FFF;
@@ -418,7 +418,7 @@ p {
   transition: color .3s ease-in-out;
 }
 
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > 
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav >
 .active > a:focus {
   background: transparent;
   color: #fc6e51;
@@ -1520,7 +1520,7 @@ ul.tweet-slider small {
 .post-meta p span.author:after {
   padding: 0 4px 0 8px;
   content: "|";
-}  
+}
 
 h4.post-title {
   font-size: 16px;
@@ -1770,7 +1770,7 @@ ul.details-list li:last-child {
 }
 
 .landing-hero {
-  background: url('../images/hero-bg/landing.jpg');
+  background: url('../images/main.jpg');
   background-size: cover;
 }
 
@@ -2234,7 +2234,7 @@ h2.head-blog-title {
   border-radius: 50%;
 }
 
-.pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, 
+.pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover,
 .pagination>.active>a:focus, .pagination>.active>span:focus {
   background: #272B2F;
   border: 1px solid #272B2F;
@@ -2504,7 +2504,7 @@ label {
 }
 
 /*--------------------
-  Recent Posts 
+  Recent Posts
 ----------------------*/
 
 .widget-posts-img {
@@ -2781,7 +2781,7 @@ ul.download li a img {
 }
 .soon-countdown div span {
   width: 150px;
-  display: block;     
+  display: block;
 }
 .soon-countdown div span:first-child {
   height: 78px;
@@ -3138,7 +3138,7 @@ p.copyright {
 }
 
 @media screen and (max-width: 640px) {
-  
+
   h1, .h1 {
     font-size: 40px;
   }
