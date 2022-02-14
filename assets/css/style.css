@@ -1860,7 +1860,7 @@ ul.features-list li {
 ----------------------*/
 
 #video-section {
-  background: url('../images/temp/tweet-bg.jpg') center top;
+  background: url('../images/temp/tweet-bg.png') center top;
   position: relative;
   padding: 100px 0;
 }
@@ -1903,7 +1903,7 @@ ul.features-list li {
 }
 
 .video-head {
-  font-size: 38px;
+  font-size: 34px;
   font-weight: 500;
   line-height: 1.3;
   text-align: center;

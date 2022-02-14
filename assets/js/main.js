@@ -253,7 +253,7 @@ $(document).ready(function($) {
         Google Map
     =============================================== */
 
-        var mapLocation = new google.maps.LatLng(-12.658231, -39.089838,17);
+        var mapLocation = new google.maps.LatLng(-12.670187652691718, -39.10249695375875, 50);
         var $mapis = $('#map');
         if ($mapis.length > 0) {
             var map;
